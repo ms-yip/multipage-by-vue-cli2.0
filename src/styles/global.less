@@ -1,0 +1,265 @@
+@import "./theme";
+html, body {
+  height: 100%;
+  min-width: 1366px;
+}
+
+.linli-layout {
+  //layout 最外层
+  height: 100%;
+}
+
+
+// ----  侧栏 start------
+.logo {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 64px;
+    height: 64px;
+    margin-top: 30px;
+    // background-color: rgb(151, 146, 146);
+  }
+  .title{
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+}
+.small-logo{
+  img {
+    width: 64px;
+    height: 64px;
+    margin-top: 30px;
+    // background-color: rgb(151, 146, 146);
+  }
+}
+
+.handle-icon {
+  padding: 17px 20px; 
+}
+
+
+.el-aside {
+  height: 100%;
+  background-color: rgb(84, 92, 100);
+
+  .el-menu {
+    border: none;
+  }
+}
+
+.system-name {
+  display: block;
+  font-size: 19px;
+  color: #ffffff;
+  margin: 0 0 0 30px;
+  line-height: 60px;
+  height: 60px;
+}
+
+// ----  侧栏 end------
+
+.sys-head {
+  display: flex;
+  align-items: center;
+  background-color: #323a45;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  color: #ffffff;
+  // z-index: 10000;
+}
+.tab-head {
+  // z-index: 10000;
+}
+.header-left {
+  display: flex,
+}
+
+.el-tabs__content{
+    padding: 0 !important; // 解决tabs显示问题
+}
+
+
+.index {
+  .el-card__body {
+    padding: 40px 20px;
+  }
+}
+
+.waring-color {
+  color: @color-warning;
+}
+.success-color {
+  color: @color-success;
+}
+.danger-color {
+  color: @color-danger;
+}
+.info-color {
+  color: @color-info;
+}
+.theme-color {
+  color: @color-theme;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: #fff;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb:horizontal { /*水平滚动条的样式*/
+  width: 4px;
+  background-color: #CCCCCC;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #fff; /*滚动条的背景颜色*/
+  -webkit-border-radius: 0; /*滚动条的圆角宽度*/
+}
+::-webkit-scrollbar {
+  width: 10px; /*滚动条的宽度*/
+  height: 8px; /*滚动条的高度*/
+}
+::-webkit-scrollbar-thumb:vertical { /*垂直滚动条的样式*/
+  height: 50px;
+  background-color: #999;
+  -webkit-border-radius: 4px;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 2px solid #fff;
+}
+::-webkit-scrollbar-thumb:hover { /*滚动条的hover样式*/
+  height: 50px;
+  background-color: #9f9f9f;
+  -webkit-border-radius: 4px;
+}
+
+/*
+*通用
+*/
+// grid
+.grid{
+  display: flex;
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+  .el-form{
+    flex: 1;
+    p {
+      margin: 5px;
+    }
+    .el-form-item {
+      // padding-top: 4px;
+      margin:2px 10px 2px 0px;
+    }
+    .el-form-item__label {
+      padding: 0 5px 0 0;
+    }
+    .el-select {
+      position: relative!important;
+    }
+  }
+  &-btn {
+    border: none;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(113, 191, 236, .3);
+    cursor: pointer;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    color: @color-word-common;
+    &:active {
+      // border: none;
+      opacity: 0.9;
+    }
+  }
+}
+
+//  ------------form end----------------
+.el-form-item {
+  margin: 0 0px 20px;
+}
+.el-form-item__error {
+  padding-top: 0px;
+}
+.toolbar {
+  margin: 5px 0 10px 0;
+}
+
+//  ------------end----------------
+// ArchitectureTree 双栏布局
+.double-col {
+  display: flex;
+  flex-direction: row;
+  .left {
+    margin: 0 5px;
+  }
+  .right {
+    margin: 0 5px;
+  }
+}
+
+// 右布局
+.container-right{
+  margin: 0 20px 0 8px;
+  width: 100%;
+  overflow: overlay;
+}
+
+// 对话框
+.dlg-footer {
+  text-align: center;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+// 
+.el-dropdown-menu__item {
+  height: 36px;
+  line-height: 36px;
+  .btn-submit {
+    height: 36px;
+    span {
+      display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+
+// 放大图片遮罩层 关闭按钮
+.serverDetail .el-icon-circle-close:before {
+  color: #fff;
+}
+
+
+.pagination>a,
+.pagination>span,
+.pagination select {
+  border: none;
+}
+
+.pagination>a:not(.disabled):hover,
+.pagination>span:not(.disabled):hover {
+  border: none;
+}
