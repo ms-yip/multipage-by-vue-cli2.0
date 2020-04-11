@@ -10,11 +10,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      "/qwerty.php": {
-        target: 'http://localhost.com.cn',
-        changeOrigin: true,
-        secure: false
-      },
+      // "/qwerty.php": {
+      //   target: 'http://localhost:8099',
+      //   changeOrigin: true,
+      //   secure: false
+      // },
     },
 
     // Various Dev Server settings

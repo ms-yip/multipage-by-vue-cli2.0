@@ -3,7 +3,7 @@
  * @Autor: yeminshan
  * @Date: 2019-10-11 17:44:36
  * @LastEditors: ms.y
- * @LastEditTime: 2020-04-06 22:15:24
+ * @LastEditTime: 2020-04-11 19:00:45
  -->
 
 <template>
@@ -80,7 +80,7 @@
 
 <script type="text/jsx">
 import grid from '@/components/grid'
-import { login, untiedUser } from '@/api/index.js'
+import { untiedUser } from '@/api/index.js'
 
 export default {
   name: 'family',
@@ -163,18 +163,19 @@ export default {
   },
   computed: {},
   created () {
-    if (process.env.NODE_ENV === 'development') {
-      // alert('开发环境,模拟登录')
-      const params = {
-        username: 'admin',
-        password: '+c42y',
-        verify: ''
-      }
-      login(params).then(res => {
-        if (res.code === '0001') {
-        }
-      })
-    }
+    this.$http.get('/api').then((res) => console.log(res)).catch(e => console.log(e))
+    // if (process.env.NODE_ENV === 'development') {
+    //   // alert('开发环境,模拟登录')
+    //   const params = {
+    //     username: 'admin',
+    //     password: '+c42y',
+    //     verify: ''
+    //   }
+    //   login(params).then(res => {
+    //     if (res.code === '0001') {
+    //     }
+    //   })
+    // }
   },
   mounted () { },
   methods: {
