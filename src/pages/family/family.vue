@@ -1,11 +1,3 @@
-<!--
- * @Description: 邻里邦后台_业主家人
- * @Autor: yeminshan
- * @Date: 2019-10-11 17:44:36
- * @LastEditors: ms.y
- * @LastEditTime: 2020-04-11 19:00:45
- -->
-
 <template>
   <div class="family">
     <grid
