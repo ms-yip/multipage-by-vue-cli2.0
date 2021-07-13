@@ -1,10 +1,3 @@
-<!--
- * @Description: 邻里邦后台_业主房屋
- * @Autor: yeminshan
- * @Date: 2019-10-11 17:45:21
- * @LastEditors: yeminshan
- * @LastEditTime: 2019-11-25 10:48:12
- -->
 
 <template>
   <div class="houses">
