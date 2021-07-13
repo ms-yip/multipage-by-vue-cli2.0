@@ -1,10 +1,4 @@
-<!--
- * @Description: 邻里邦后台_业主租客
- * @Autor: yeminshan
- * @Date: 2019-10-11 17:45:29
- * @LastEditors: yeminshan
- * @LastEditTime: 2019-11-07 19:01:16
- -->
+
 
 <template>
   <div class="tenants">
