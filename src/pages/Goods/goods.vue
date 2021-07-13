@@ -1,11 +1,3 @@
-<!--
- * @Description: 邻里邦后台_商品
- * @Autor: yeminshan
- * @Date: 2019-10-11 17:44:36
- * @LastEditors  : yeminshan
- * @LastEditTime : 2020-02-20 17:11:44
- -->
-
 <template>
   <div class="goods">
     <grid
